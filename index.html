@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP + Pairing // HANXZ</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- TERMINAL BAR -->
+        <div class="terminal-bar">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+            <div class="terminal-title">otp_spammer ~ hanxz@kali</div>
+        </div>
+
+        <!-- MAIN CARD -->
+        <div class="card">
+
+            <!-- HEADER -->
+            <div class="header">
+                <h1 class="glitch">OTP + PAIRING</h1>
+                <div class="subtitle">
+                    <span class="status">●</span> SYSTEM ONLINE // HERO API
+                </div>
+                <div class="author-tag">Made By Hanxz</div>
+            </div>
+
+            <!-- TABS -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="otp">
+                    <span class="ico">📨</span> OTP
+                </button>
+                <button class="tab-btn" data-tab="pairing">
+                    <span class="ico">🔗</span> PAIRING
+                </button>
+            </div>
+
+            <!-- COUNTRY SWITCH -->
+            <div class="country-switch">
+                <button class="country-btn active" id="countryBtnId" data-mode="id">
+                    🇮🇩 INDONESIA
+                </button>
+                <button class="country-btn" id="countryBtnAll" data-mode="all">
+                    🌍 ALL COUNTRY
+                </button>
+            </div>
+
+            <!-- PANEL OTP -->
+            <div class="panel active" id="panel-otp">
+                <div class="label">Target Number</div>
+                <div class="input-box" id="otpInputBox">
+                    <input
+                        type="tel"
+                        id="otpPhoneInput"
+                        placeholder="08xxxxxxxxxx"
+                        maxlength="20"
+                        autocomplete="off"
+                        inputmode="tel"
+                        autofocus
+                    />
+                </div>
+                <div class="hint" id="otpHint">// Contoh: 08123456789 → 628123456789</div>
+
+                <button class="btn" id="otpSendBtn">
+                    <span class="btn-text">▶ EXECUTE SPAM OTP</span>
+                    <div class="spin"></div>
+                </button>
+            </div>
+
+            <!-- PANEL PAIRING -->
+            <div class="panel" id="panel-pairing">
+                <div class="label">Target Number</div>
+                <div class="input-box" id="pairInputBox">
+                    <input
+                        type="tel"
+                        id="pairPhoneInput"
+                        placeholder="08xxxxxxxxxx"
+                        maxlength="20"
+                        autocomplete="off"
+                        inputmode="tel"
+                    />
+                </div>
+                <div class="hint" id="pairHint">// Contoh: 08123456789 → 628123456789</div>
+
+                <div class="delay-info">
+                    Delay Otomatis: <b style="color:#ffbd2e">4.0 detik</b> (dari server)
+                </div>
+
+                <div class="setting-box">
+                    <div class="setting-label">Jumlah Spam</div>
+                    <input type="number" id="pairCount" value="10" min="1" max="999" />
+                </div>
+
+                <button class="btn pink" id="pairSendBtn">
+                    <span class="btn-text">▶ EXECUTE SPAM PAIRING</span>
+                    <div class="spin"></div>
+                </button>
+            </div>
+
+            <!-- LOG -->
+            <div class="log-terminal" id="log">
+                <div class="log-header">
+                    <span id="logTitle">// SYSTEM LOG</span>
+                    <span class="dot">● LIVE</span>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <span class="brand">MADE BY HANXZ</span>
+                <span class="ver">v8.0 // FULL PROTECT</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT ORDER — JANGAN DIUBAH -->
+    <script src="protect.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
